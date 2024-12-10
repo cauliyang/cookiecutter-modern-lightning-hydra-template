@@ -6,7 +6,7 @@ from lightning import Callback, LightningDataModule, LightningModule, Trainer
 from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig
 
-from riker.utils import (
+from project.utils import (
     RankedLogger,
     extras,
     get_metric_value,
