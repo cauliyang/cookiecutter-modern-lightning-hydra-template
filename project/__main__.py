@@ -1,5 +1,5 @@
 def main():
-    print("Hello from riker.__main__")
+    print("Hello from __main__")
 
 
 if __name__ == "__main__":

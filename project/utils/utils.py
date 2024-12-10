@@ -4,7 +4,7 @@ from typing import Any, Callable, Dict, Optional, Tuple
 
 from omegaconf import DictConfig
 
-from riker.utils import pylogger, rich_utils
+from project.utils import pylogger, rich_utils
 
 log = pylogger.RankedLogger(__name__, rank_zero_only=True)
 
