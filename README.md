@@ -428,23 +428,6 @@ ValueError: Specify tags before launching a multirun!
 
 <br>
 
-## ❤️ Contributions
-
-This project exists thanks to all the people who contribute.
-
-![Contributors](https://readme-contributors.now.sh/ashleve/lightning-hydra-template?extension=jpg&width=400&aspectRatio=1)
-
-Have a question? Found a bug? Missing a specific feature? Feel free to file a new issue, discussion or PR with respective title and description.
-
-Before making an issue, please verify that:
-
-- The problem still exists on the current `main` branch.
-- Your python dependencies are updated to recent versions.
-
-Suggestions for improvements are always welcome!
-
-<br>
-
 ## How It Works
 
 All PyTorch Lightning modules are dynamically instantiated from module paths specified in config. Example model config:
