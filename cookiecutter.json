@@ -4,7 +4,7 @@
     "package_name": "{{ cookiecutter.project_slug }}",
     "project_author_name": "Your Name",
     "project_author_email": "your.email@example.com",
-    "project_description": "A machine learning project using PyTorch Lightning and Hydra",
+    "project_description": "A deep learning project using PyTorch Lightning and Hydra",
     "project_version": "0.1.0",
     "python_version": "3.10",
     "license": ["MIT", "Apache-2.0", "BSD-3-Clause", "GPL-3.0", "None"],
