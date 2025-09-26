@@ -1,4 +1,4 @@
-# Modern-Lightning-Hydra-Template
+# {{ cookiecutter.project_name }}
 
 <br>
 
@@ -52,7 +52,7 @@ The directory structure of new project looks like this:
 │
 ├── scripts                <- Shell scripts
 │
-├── project_name                    <- Source code
+├── {{ cookiecutter.package_name }}                    <- Source code
 │   ├── data                     <- Data scripts
 │   ├── models                   <- Model scripts
 │   ├── utils                    <- Utility scripts
@@ -76,11 +76,11 @@ The directory structure of new project looks like this:
 
 ```bash
 # clone project
-git clone https://github.com/cauliyang/modern-lightning-hydra-template
-cd modern-lightning-hydra-template
+git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}
+cd {{ cookiecutter.github_repo_name }}
 
 # [OPTIONAL] create conda environment
-conda create -n myenv python=3.10
+conda create -n myenv python={{ cookiecutter.python_version }}
 conda activate myenv
 
 # install pytorch according to instructions
@@ -838,7 +838,7 @@ conda update -n base -c defaults conda
 Create new conda environment:
 
 ```bash
-conda create -n myenv python=3.10
+conda create -n myenv python={{ cookiecutter.python_version }}
 conda activate myenv
 ```
 
@@ -1138,11 +1138,11 @@ SOFTWARE.
 
 **DELETE EVERYTHING ABOVE FOR YOUR PROJECT**
 
----
+______________________________________________________________________
 
 <div align="center">
 
-# Your Project Name
+# {{ cookiecutter.project_name }}
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
@@ -1155,7 +1155,7 @@ SOFTWARE.
 
 ## Description
 
-What it does
+{{ cookiecutter.project_description }}
 
 ## Installation
 
@@ -1163,11 +1163,11 @@ What it does
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
-cd your-repo-name
+git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}
+cd {{ cookiecutter.github_repo_name }}
 
 # [OPTIONAL] create conda environment
-conda create -n myenv python=3.10
+conda create -n myenv python={{ cookiecutter.python_version }}
 conda activate myenv
 
 # install pytorch according to instructions
@@ -1182,8 +1182,8 @@ uv sync
 
 ```bash
 # clone project
-git clone https://github.com/YourGithubName/your-repo-name
-cd your-repo-name
+git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}
+cd {{ cookiecutter.github_repo_name }}
 
 # create conda environment and install dependencies
 conda env create -f environment.yaml -n myenv
