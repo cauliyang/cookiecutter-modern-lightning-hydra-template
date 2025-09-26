@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "{{ cookiecutter.package_name }}"
 version = "{{ cookiecutter.project_version }}"
@@ -8,6 +12,19 @@ license = "{{ cookiecutter.license }}"
 {% endif -%}
 authors = [
   { name = "{{ cookiecutter.project_author_name }}", email = "{{ cookiecutter.project_author_email }}" },
+]
+keywords = ["deep learning"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
 ]
 requires-python = ">={{ cookiecutter.python_version }}"
 dependencies = [
@@ -22,7 +39,6 @@ dependencies = [
   "typer>=0.15.1",
 ]
 
-
 {% if cookiecutter.github_username != "YourGithubUsername" -%}
 [project.urls]
 Homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}"
@@ -31,10 +47,6 @@ Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecut
 
 [project.scripts]
 {{ cookiecutter.package_name }} = "{{ cookiecutter.package_name }}.__main__:app"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
 [project.optional-dependencies]
 
