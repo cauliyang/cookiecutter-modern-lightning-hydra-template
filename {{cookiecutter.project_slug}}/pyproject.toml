@@ -92,8 +92,6 @@ dev = [
   "wandb>=0.19.0",
 ]
 
-ter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
-
 [tool.ty]
 # All rules are enabled as "error" by default; no need to specify unless overriding.
 # Example override: relax a rule for the entire project (uncomment if needed).
