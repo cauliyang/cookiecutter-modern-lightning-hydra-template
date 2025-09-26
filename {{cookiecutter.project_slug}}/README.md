@@ -5,19 +5,19 @@
 ## Installation
 
 ```bash
-pip install -e .
+uv sync
 ```
 
 ## Usage
 
 ### Training
 ```bash
-python train.py
+uv run train.py
 ```
 
 ### Evaluation
 ```bash
-python eval.py
+uv run eval.py
 ```
 
 ## Project Structure
@@ -40,12 +40,12 @@ python eval.py
 
 Install development dependencies:
 ```bash
-pip install -e ".[dev]"
+uv sync --dev
 ```
 
 Run tests:
 ```bash
-pytest
+uv run pytest
 ```
 
 Run pre-commit hooks:
