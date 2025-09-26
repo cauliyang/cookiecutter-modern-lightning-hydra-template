@@ -1,0 +1,24 @@
+{
+    "project_name": "My Lightning Hydra Project",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "package_name": "{{ cookiecutter.project_slug }}",
+    "project_author_name": "Your Name",
+    "project_author_email": "your.email@example.com",
+    "project_description": "A machine learning project using PyTorch Lightning and Hydra",
+    "project_version": "0.1.0",
+    "python_version": "3.10",
+    "license": ["MIT", "Apache-2.0", "BSD-3-Clause", "GPL-3.0", "None"],
+    "github_username": "YourGithubUsername",
+    "github_repo_name": "{{ cookiecutter.project_slug }}",
+    "_copy_without_render": [
+        "*.py",
+        "*.yaml", 
+        "*.yml",
+        "*.json",
+        "*.toml",
+        "*.cfg",
+        "*.md",
+        "*.txt",
+        "*.sh"
+    ]
+}

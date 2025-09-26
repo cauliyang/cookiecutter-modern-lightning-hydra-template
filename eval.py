@@ -5,7 +5,7 @@ from lightning import LightningDataModule, LightningModule, Trainer
 from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig
 
-from riker.utils import (
+from {{ cookiecutter.package_name }}.utils import (
     RankedLogger,
     extras,
     instantiate_loggers,
