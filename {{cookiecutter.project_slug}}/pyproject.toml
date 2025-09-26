@@ -52,6 +52,7 @@ Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecut
 
 [tool.uv]
 no-build-isolation-package = ['flash-attn', 'causal-conv1d']
+package = true
 
 [tool.pytest.ini_options]
 addopts = [
@@ -109,6 +110,3 @@ select = [
     "B",   # flake8-bugbear
     "UP",  # pyupgrade
 ]
-
-[tool.uv]
-package = true
