@@ -12,10 +12,9 @@
     "github_repo_name": "{{ cookiecutter.project_slug }}",
     "_copy_without_render": [
         "*.py",
-        "*.yaml", 
+        "*.yaml",
         "*.yml",
         "*.json",
-        "*.toml",
         "*.cfg",
         "*.md",
         "*.txt",
