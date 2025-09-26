@@ -5,7 +5,7 @@ from lightning import Callback
 from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig
 
-from project.utils import pylogger
+from {{ cookiecutter.package_name }}.utils import pylogger
 
 log = pylogger.RankedLogger(__name__, rank_zero_only=True)
 
