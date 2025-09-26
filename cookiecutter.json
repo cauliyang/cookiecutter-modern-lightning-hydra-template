@@ -11,8 +11,6 @@
     "github_username": "YourGithubUsername",
     "github_repo_name": "{{ cookiecutter.project_slug }}",
     "_copy_without_render": [
-        "*.yaml",
-        "*.yml",
         "*.json",
         "*.cfg",
         "*.md",
