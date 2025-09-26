@@ -3,8 +3,6 @@
 {% if cookiecutter.license != "None" -%}
 
 {% endif -%}
-
-{% if cookiecutter.github_username != "YourGithubUsername" -%}
 name = "{{ cookiecutter.package_name }}"
 version = "{{ cookiecutter.project_version }}"
 description = "{{ cookiecutter.project_description }}"
@@ -15,8 +13,10 @@ authors = [
 ]
 requires-python = ">={{ cookiecutter.python_version }}"
 [project.urls]
+{% if cookiecutter.github_username != "YourGithubUsername" -%}
 
 {% endif %}
+
 Homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}"
 Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}"
 dependencies = [
@@ -80,3 +80,4 @@ dev = [
   "torchvision>=0.20.1",
   "wandb>=0.19.0",
 ]
+
