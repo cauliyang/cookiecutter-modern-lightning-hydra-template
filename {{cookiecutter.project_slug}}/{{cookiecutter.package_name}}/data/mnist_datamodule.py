@@ -79,9 +79,9 @@ class MNISTDataModule(LightningDataModule):
             [transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))]
         )
 
-        self.data_train: Dataset| None = None
-        self.data_val: Dataset| None = None
-        self.data_test: Dataset| None = None
+        self.data_train: Dataset | None = None
+        self.data_val: Dataset | None = None
+        self.data_test: Dataset | None = None
 
         self.batch_size_per_device = batch_size
 
