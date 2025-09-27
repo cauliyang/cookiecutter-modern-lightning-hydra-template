@@ -1,62 +1,43 @@
-# {{cookiecutter.project_name}}
 
-{{cookiecutter.project_description}}
+{{ cookiecutter.project_description }}
 
 ## Installation
 
+#### Pip
+
 ```bash
+# clone project
+git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo_name }}
+cd {{ cookiecutter.github_repo_name }}
+
+# install pytorch according to instructions
+# https://pytorch.org/get-started/
+
+# install requirements
+pip install uv
 uv sync
 ```
 
-## Usage
+## How to run
 
-### Training
+Train model with default configuration
+
 ```bash
-uv run train.py
+# train on CPU
+uv run train.py trainer=cpu
+
+# train on GPU
+uv run train.py trainer=gpu
 ```
 
-### Evaluation
+Train model with chosen experiment configuration from [configs/experiment/](configs/experiment/)
+
 ```bash
-uv run eval.py
+uv run train.py experiment=experiment_name.yaml
 ```
 
-## Project Structure
+You can override any parameter from command line like this
 
-```
-├── configs/                   # Configuration files
-├── data/                     # Data directory
-├── logs/                     # Training logs
-├── notebooks/                # Jupyter notebooks
-├── scripts/                  # Utility scripts
-├── tests/                    # Test files
-├── {{cookiecutter.package_name}}/           # Main package
-├── train.py                  # Training script
-├── eval.py                   # Evaluation script
-├── Makefile                  # Make commands
-└── pyproject.toml           # Project dependencies
-```
-
-## Development
-
-Install development dependencies:
 ```bash
-uv sync --dev
+uv run train.py trainer.max_epochs=20 data.batch_size=64
 ```
-
-Run tests:
-```bash
-uv run pytest
-```
-
-Run pre-commit hooks:
-```bash
-pre-commit run --all-files
-```
-
-## Author
-
-{{cookiecutter.project_author_name}} ({{cookiecutter.project_author_email}})
-
-## License
-
-{{cookiecutter.license}}

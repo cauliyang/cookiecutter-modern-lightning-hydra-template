@@ -1,6 +1,6 @@
 import warnings
 from importlib.util import find_spec
-from typing import Any
+from typing import Any, Callable
 
 from omegaconf import DictConfig
 from {{cookiecutter.package_name}}.utils import pylogger, rich_utils
