@@ -5,8 +5,7 @@ import lightning as L
 from lightning import Callback, LightningDataModule, LightningModule, Trainer
 from lightning.pytorch.loggers import Logger
 from omegaconf import DictConfig
-
-from {{ cookiecutter.package_name }}.utils import (
+from {{cookiecutter.package_name}}.utils import (
     RankedLogger,
     extras,
     get_metric_value,

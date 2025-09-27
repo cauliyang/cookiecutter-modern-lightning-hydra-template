@@ -3,8 +3,7 @@ from importlib.util import find_spec
 from typing import Any
 
 from omegaconf import DictConfig
-
-from {{ cookiecutter.package_name }}.utils import pylogger, rich_utils
+from {{cookiecutter.package_name}}.utils import pylogger, rich_utils
 
 log = pylogger.RankedLogger(__name__, rank_zero_only=True)
 
